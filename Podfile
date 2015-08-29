@@ -3,5 +3,6 @@ use_frameworks!
 
 target 'Practice-iOS' do
 pod 'SnapKit'
+pod 'SCLAlertView'
 
 end
