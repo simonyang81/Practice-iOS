@@ -10,12 +10,12 @@
 		B3EBB670D0934033BBD63984 /* Pods_Practice_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656CDBB26B7FBCBB666B8461 /* Pods_Practice_iOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F47AD6371B90500A00D6EF37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AD6361B90500A00D6EF37 /* AppDelegate.swift */; };
 		F47AD6391B90500A00D6EF37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AD6381B90500A00D6EF37 /* ViewController.swift */; };
-		F47AD63C1B90500A00D6EF37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47AD63A1B90500A00D6EF37 /* Main.storyboard */; };
 		F47AD63E1B90500A00D6EF37 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47AD63D1B90500A00D6EF37 /* Images.xcassets */; };
 		F47AD6411B90500A00D6EF37 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47AD63F1B90500A00D6EF37 /* LaunchScreen.xib */; };
 		F47AD64D1B90500A00D6EF37 /* Practice_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AD64C1B90500A00D6EF37 /* Practice_iOSTests.swift */; };
 		F47AD6571B90506C00D6EF37 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F47AD6561B90506C00D6EF37 /* .gitignore */; };
 		F47AD6591B90507D00D6EF37 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F47AD6581B90507D00D6EF37 /* Podfile */; };
+		F4C77FC01B9338CE001E3A77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C77FBF1B9338CE001E3A77 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 		F47AD6351B90500A00D6EF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47AD6361B90500A00D6EF37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F47AD6381B90500A00D6EF37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F47AD63B1B90500A00D6EF37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F47AD63D1B90500A00D6EF37 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F47AD6401B90500A00D6EF37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F47AD6461B90500A00D6EF37 /* Practice-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Practice-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,7 @@
 		F47AD64C1B90500A00D6EF37 /* Practice_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice_iOSTests.swift; sourceTree = "<group>"; };
 		F47AD6561B90506C00D6EF37 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F47AD6581B90507D00D6EF37 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		F4C77FBF1B9338CE001E3A77 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +109,10 @@
 			children = (
 				F47AD6361B90500A00D6EF37 /* AppDelegate.swift */,
 				F47AD6381B90500A00D6EF37 /* ViewController.swift */,
-				F47AD63A1B90500A00D6EF37 /* Main.storyboard */,
 				F47AD63D1B90500A00D6EF37 /* Images.xcassets */,
 				F47AD63F1B90500A00D6EF37 /* LaunchScreen.xib */,
 				F47AD6341B90500A00D6EF37 /* Supporting Files */,
+				F4C77FBF1B9338CE001E3A77 /* LoginViewController.swift */,
 			);
 			path = "Practice-iOS";
 			sourceTree = "<group>";
@@ -227,7 +227,6 @@
 			files = (
 				F47AD6591B90507D00D6EF37 /* Podfile in Resources */,
 				F47AD6571B90506C00D6EF37 /* .gitignore in Resources */,
-				F47AD63C1B90500A00D6EF37 /* Main.storyboard in Resources */,
 				F47AD6411B90500A00D6EF37 /* LaunchScreen.xib in Resources */,
 				F47AD63E1B90500A00D6EF37 /* Images.xcassets in Resources */,
 			);
@@ -295,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C77FC01B9338CE001E3A77 /* LoginViewController.swift in Sources */,
 				F47AD6391B90500A00D6EF37 /* ViewController.swift in Sources */,
 				F47AD6371B90500A00D6EF37 /* AppDelegate.swift in Sources */,
 			);
@@ -319,14 +319,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F47AD63A1B90500A00D6EF37 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F47AD63B1B90500A00D6EF37 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F47AD63F1B90500A00D6EF37 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
