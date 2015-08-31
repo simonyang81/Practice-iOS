@@ -15,6 +15,8 @@ class LoginViewController: UIViewController {
 //    let label1 = UILabel()
 //    let backBtn = UIButton.buttonWithType(UIButtonType.System) as! UIButton
 
+    let navBar = UINavigationBar()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,10 +32,9 @@ class LoginViewController: UIViewController {
 
         var screenRect : CGRect = UIScreen.mainScreen().bounds
 
-        var navBar = UINavigationBar()
         navBar.frame = CGRectMake(0, 0, screenRect.size.width, 64)
         var navItems = UINavigationItem(title: "Login")
-        var leftBar = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Bordered,
+        var leftBar = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain,
                 target: self, action: Selector("backMainViewController:"))
         navBar.pushNavigationItem(navItems, animated: true)
         navItems.setLeftBarButtonItem(leftBar, animated: true)
@@ -43,7 +44,7 @@ class LoginViewController: UIViewController {
     }
 
     func backMainViewController(sender:UIButton) {
-
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
