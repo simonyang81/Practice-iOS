@@ -20,6 +20,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
+        view.backgroundColor = UIColor.whiteColor()
+
         view.addSubview(label1)
         view.addSubview(button1)
         view.addSubview(button2)

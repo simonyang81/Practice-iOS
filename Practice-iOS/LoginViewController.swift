@@ -12,25 +12,37 @@ import SCLAlertView
 
 class LoginViewController: UIViewController {
 
-    let label1 = UILabel()
+//    let label1 = UILabel()
+//    let backBtn = UIButton.buttonWithType(UIButtonType.System) as! UIButton
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
 
-        view.addSubview(label1)
+        view.backgroundColor = UIColor.whiteColor()
 
-        label1.textColor = UIColor.blackColor()
-        label1.font = UIFont(name: "HelveticaNeue", size: 30.0)
-        label1.text = "Login Screen"
-        label1.textAlignment = NSTextAlignment.Center
+        addNavigation()
 
-        label1.snp_remakeConstraints { (make) -> Void in
-            make.width.equalTo(view)
-            make.top.equalTo(view).offset(50)
-        }
+    }
 
+    func addNavigation() {
+
+        var screenRect : CGRect = UIScreen.mainScreen().bounds
+
+        var navBar = UINavigationBar()
+        navBar.frame = CGRectMake(0, 0, screenRect.size.width, 64)
+        var navItems = UINavigationItem(title: "Login")
+        var leftBar = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Bordered,
+                target: self, action: Selector("backMainViewController:"))
+        navBar.pushNavigationItem(navItems, animated: true)
+        navItems.setLeftBarButtonItem(leftBar, animated: true)
+
+        view.addSubview(navBar)
+
+    }
+
+    func backMainViewController(sender:UIButton) {
 
     }
 
@@ -39,15 +51,5 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
