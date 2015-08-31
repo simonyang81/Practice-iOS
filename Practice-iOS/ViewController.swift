@@ -38,7 +38,10 @@ class ViewController: UIViewController {
         
         button1.setTitle("button1", forState: UIControlState.Normal)
         button2.setTitle("button2", forState: UIControlState.Normal)
-        
+
+        button1.titleLabel!.font = UIFont(name: "HelveticaNeue", size: 16.0)
+        button2.titleLabel!.font = UIFont(name: "HelveticaNeue", size: 16.0)
+
 //        button1.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
 //        button1.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
 

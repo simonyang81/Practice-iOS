@@ -43,6 +43,7 @@ class LoginViewController: UIViewController {
         loginBtn.addTarget(self, action: Selector("showLoginInfo:"),
                 forControlEvents: UIControlEvents.TouchUpInside)
 
+
     }
 
     func addNavigation() {
@@ -86,6 +87,7 @@ class LoginViewController: UIViewController {
         passwordTextFiled.secureTextEntry = true
 
         loginBtn.setTitle("Login", forState: UIControlState.Normal)
+        loginBtn.titleLabel!.font = UIFont(name: "HelveticaNeue", size: 20.0)
     }
 
     func remakeConstraints(view1 : UIView, view2name view2 : UIView) {
@@ -125,18 +127,30 @@ class LoginViewController: UIViewController {
     }
 
     func showLoginInfo(sender:UIButton) {
+
+        hideKeyboard()
         var text = nameTextFiled.text + " / " + passwordTextFiled.text
         SCLAlertView().showInfo("Login Info", subTitle: text)
     }
 
 
     func backMainViewController(sender:UIButton) {
+        hideKeyboard()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        hideKeyboard()
+    }
+
+    func hideKeyboard() {
+        nameTextFiled.resignFirstResponder()
+        passwordTextFiled.resignFirstResponder()
     }
     
 
