@@ -11,14 +11,13 @@ import SnapKit
 import SCLAlertView
 import Cartography
 
-class LoginViewController: UIViewController {
+class LoginViewController: BasViewController {
 
     let labelName           = UILabel()
     let labelPassword       = UILabel()
     let nameTextFiled       = UITextField()
     let passwordTextFiled   = UITextField()
     let loginBtn            = UIButton.buttonWithType(UIButtonType.System) as! UIButton
-    let navBar              = UINavigationBar()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +26,7 @@ class LoginViewController: UIViewController {
 
         view.backgroundColor = UIColor.whiteColor()
 
-        addNavigation()
+        addNavigation("Login")
 
         addView()
         initView()
@@ -46,20 +45,6 @@ class LoginViewController: UIViewController {
 
     }
 
-    func addNavigation() {
-
-        var screenRect : CGRect = UIScreen.mainScreen().bounds
-
-        navBar.frame = CGRectMake(0, 0, screenRect.size.width, 64)
-        var navItems = UINavigationItem(title: "Login")
-        var leftBar = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain,
-                target: self, action: Selector("backMainViewController:"))
-        navBar.pushNavigationItem(navItems, animated: true)
-        navItems.setLeftBarButtonItem(leftBar, animated: true)
-
-        view.addSubview(navBar)
-
-    }
 
     func addView() {
         self.view.addSubview(labelName)
@@ -118,10 +103,8 @@ class LoginViewController: UIViewController {
 
     func loginButtonConstraints() {
         loginBtn.snp_remakeConstraints { (make) -> Void in
-
             make.centerX.equalTo(view)
             make.top.equalTo(labelPassword.snp_bottom).offset(30)
-
         }
 
     }
@@ -134,11 +117,6 @@ class LoginViewController: UIViewController {
     }
 
 
-    func backMainViewController(sender:UIButton) {
-        hideKeyboard()
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -148,10 +126,15 @@ class LoginViewController: UIViewController {
         hideKeyboard()
     }
 
+    override func callback() {
+        hideKeyboard()
+    }
+
     func hideKeyboard() {
         nameTextFiled.resignFirstResponder()
         passwordTextFiled.resignFirstResponder()
     }
-    
+
+
 
 }

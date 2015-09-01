@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		685F007F485F18FFC6414705 /* BasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0FD6C38A7FD931CD1BCB /* BasViewController.swift */; };
+		685F0A1E9EE7D7C40A97F8C0 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0BDB2AEAD1454D6167CE /* TestTableViewController.swift */; };
 		B3EBB670D0934033BBD63984 /* Pods_Practice_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656CDBB26B7FBCBB666B8461 /* Pods_Practice_iOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F47AD6371B90500A00D6EF37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AD6361B90500A00D6EF37 /* AppDelegate.swift */; };
 		F47AD6391B90500A00D6EF37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AD6381B90500A00D6EF37 /* ViewController.swift */; };
 		F47AD63E1B90500A00D6EF37 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47AD63D1B90500A00D6EF37 /* Images.xcassets */; };
-		F47AD6411B90500A00D6EF37 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47AD63F1B90500A00D6EF37 /* LaunchScreen.xib */; };
 		F47AD64D1B90500A00D6EF37 /* Practice_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AD64C1B90500A00D6EF37 /* Practice_iOSTests.swift */; };
 		F47AD6571B90506C00D6EF37 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F47AD6561B90506C00D6EF37 /* .gitignore */; };
 		F47AD6591B90507D00D6EF37 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F47AD6581B90507D00D6EF37 /* Podfile */; };
@@ -30,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		656CDBB26B7FBCBB666B8461 /* Pods_Practice_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practice_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		685F0BDB2AEAD1454D6167CE /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
+		685F0FD6C38A7FD931CD1BCB /* BasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasViewController.swift; sourceTree = "<group>"; };
 		98CC38317BCB0237A324BB46 /* Pods-Practice-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Practice-iOS/Pods-Practice-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		BD97EBEB1F9DFA96D6BF54E9 /* Pods-Practice-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Practice-iOS/Pods-Practice-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F47AD6311B90500900D6EF37 /* Practice-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Practice-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,7 +40,6 @@
 		F47AD6361B90500A00D6EF37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F47AD6381B90500A00D6EF37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F47AD63D1B90500A00D6EF37 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F47AD6401B90500A00D6EF37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F47AD6461B90500A00D6EF37 /* Practice-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Practice-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47AD64B1B90500A00D6EF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47AD64C1B90500A00D6EF37 /* Practice_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice_iOSTests.swift; sourceTree = "<group>"; };
@@ -110,9 +112,10 @@
 				F47AD6361B90500A00D6EF37 /* AppDelegate.swift */,
 				F47AD6381B90500A00D6EF37 /* ViewController.swift */,
 				F47AD63D1B90500A00D6EF37 /* Images.xcassets */,
-				F47AD63F1B90500A00D6EF37 /* LaunchScreen.xib */,
 				F47AD6341B90500A00D6EF37 /* Supporting Files */,
 				F4C77FBF1B9338CE001E3A77 /* LoginViewController.swift */,
+				685F0BDB2AEAD1454D6167CE /* TestTableViewController.swift */,
+				685F0FD6C38A7FD931CD1BCB /* BasViewController.swift */,
 			);
 			path = "Practice-iOS";
 			sourceTree = "<group>";
@@ -227,7 +230,6 @@
 			files = (
 				F47AD6591B90507D00D6EF37 /* Podfile in Resources */,
 				F47AD6571B90506C00D6EF37 /* .gitignore in Resources */,
-				F47AD6411B90500A00D6EF37 /* LaunchScreen.xib in Resources */,
 				F47AD63E1B90500A00D6EF37 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +299,8 @@
 				F4C77FC01B9338CE001E3A77 /* LoginViewController.swift in Sources */,
 				F47AD6391B90500A00D6EF37 /* ViewController.swift in Sources */,
 				F47AD6371B90500A00D6EF37 /* AppDelegate.swift in Sources */,
+				685F0A1E9EE7D7C40A97F8C0 /* TestTableViewController.swift in Sources */,
+				685F007F485F18FFC6414705 /* BasViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,17 +321,6 @@
 			targetProxy = F47AD6471B90500A00D6EF37 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F47AD63F1B90500A00D6EF37 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F47AD6401B90500A00D6EF37 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F47AD64E1B90500A00D6EF37 /* Debug */ = {
