@@ -20,7 +20,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-
         for (var i=0; i<3; i++) {
             var btn : UIButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
             buttonArrays.append(btn)
@@ -35,8 +34,8 @@ class ViewController: UIViewController {
         }
 
         label1.textColor = UIColor.blackColor()
-        label1.font = UIFont(name: "HelveticaNeue", size: 30.0)
-        label1.text = "Hello World"
+        label1.font = UIFont(name: "HelveticaNeue", size: 20.0)
+        label1.text = "Simon's practice"
         label1.textAlignment = NSTextAlignment.Center
         
         label1.snp_remakeConstraints { (make) -> Void in
