@@ -5,5 +5,6 @@ target 'Practice-iOS' do
 pod 'SnapKit'
 pod 'SCLAlertView'
 pod 'Cartography'
+pod 'SVPullToRefresh', :head
 
 end

@@ -13,11 +13,12 @@ import Cartography
 
 class LoginViewController: BasViewController {
 
-    let labelName           = UILabel()
-    let labelPassword       = UILabel()
-    let nameTextFiled       = UITextField()
-    let passwordTextFiled   = UITextField()
-    let loginBtn            = UIButton.buttonWithType(UIButtonType.System) as! UIButton
+    let labelName         = UILabel()
+    let labelPassword     = UILabel()
+    let nameTextFiled     = UITextField()
+
+    let passwordTextFiled = UITextField()
+    let loginBtn          = UIButton.buttonWithType(UIButtonType.System) as! UIButton
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,18 +58,18 @@ class LoginViewController: BasViewController {
     }
 
     func initView() {
-        labelName.textColor = UIColor.blackColor()
-        labelName.font = UIFont(name: "HelveticaNeue", size: 14.0)
-        labelName.text = "Username: "
-        labelName.textAlignment = NSTextAlignment.Right
+        labelName.textColor               = UIColor.blackColor()
+        labelName.font                    = UIFont(name: "HelveticaNeue", size: 14.0)
+        labelName.text                    = "Username: "
+        labelName.textAlignment           = NSTextAlignment.Right
 
-        labelPassword.textColor = UIColor.blackColor()
-        labelPassword.font = UIFont(name: "HelveticaNeue", size: 14.0)
-        labelPassword.text = "Password: "
-        labelPassword.textAlignment = NSTextAlignment.Right
+        labelPassword.textColor           = UIColor.blackColor()
+        labelPassword.font                = UIFont(name: "HelveticaNeue", size: 14.0)
+        labelPassword.text                = "Password: "
+        labelPassword.textAlignment       = NSTextAlignment.Right
 
-        nameTextFiled.borderStyle = UITextBorderStyle.RoundedRect
-        passwordTextFiled.borderStyle = UITextBorderStyle.RoundedRect
+        nameTextFiled.borderStyle         = UITextBorderStyle.RoundedRect
+        passwordTextFiled.borderStyle     = UITextBorderStyle.RoundedRect
         passwordTextFiled.secureTextEntry = true
 
         loginBtn.setTitle("Login", forState: UIControlState.Normal)
