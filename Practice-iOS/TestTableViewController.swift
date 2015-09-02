@@ -24,9 +24,10 @@ class TestTableViewController: BasViewController, UITableViewDataSource {
         self.view.addSubview(tableView!)
 
         tableView!.snp_remakeConstraints { (make) -> Void in
-            make.top.equalTo(view.snp_top).offset(64)
-            make.bottom.equalTo(view.snp_bottom)
-            make.size.equalTo(view)
+//            make.top.equalTo(view.snp_top).offset(64)
+            make.size.equalTo(view).offset(CGSizeMake(0, -64))
+            make.top.equalTo(navBar.snp_bottom)
+
         }
 
         tableView!.addPullToRefreshWithActionHandler {() -> Void in

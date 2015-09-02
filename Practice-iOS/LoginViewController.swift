@@ -72,6 +72,9 @@ class LoginViewController: BasViewController {
         passwordTextFiled.borderStyle     = UITextBorderStyle.RoundedRect
         passwordTextFiled.secureTextEntry = true
 
+        nameTextFiled.clearButtonMode     = UITextFieldViewMode.WhileEditing
+        passwordTextFiled.clearButtonMode = UITextFieldViewMode.WhileEditing
+
         loginBtn.setTitle("Login", forState: UIControlState.Normal)
         loginBtn.titleLabel!.font = UIFont(name: "HelveticaNeue", size: 20.0)
     }
