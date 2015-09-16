@@ -13,8 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var mainController:UIViewController?
-//    var nav: UINavigationController?
-
+    var nav: UINavigationController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -22,8 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.mainController = ViewController()
         self.window!.makeKeyAndVisible()
+        self.nav = UINavigationController(rootViewController: self.mainController!)
+
 //        self.window!.backgroundColor = UIColor.whiteColor()
-        self.window!.rootViewController = mainController
+        self.window!.rootViewController = nav
 
         return true
     }

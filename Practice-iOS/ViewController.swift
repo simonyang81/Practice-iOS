@@ -20,6 +20,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
+        self.navigationItem.title = "Simon's Practice"
+        var leftBtn = UIBarButtonItem(title: "Popup",
+                style: UIBarButtonItemStyle.Bordered,
+                target: self,
+                action: Selector("button1Handler:"))
+        self.navigationItem.leftBarButtonItem = leftBtn
+
+        var rightBtn = UIBarButtonItem(title: "Login",
+                style: UIBarButtonItemStyle.Bordered,
+                target:self,
+                action: Selector("gotoLoginScreen:"))
+        self.navigationItem.rightBarButtonItem = rightBtn
+
         for (var i=0; i<3; i++) {
             var btn : UIButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
             buttonArrays.append(btn)
@@ -84,7 +97,8 @@ class ViewController: UIViewController {
 
     func gotoLoginScreen(sender:UIButton) {
         let vc:LoginViewController = LoginViewController()
-        self.presentViewController(vc, animated: true, completion: nil)
+        self.navigationController!.pushViewController(vc, animated: true)
+//        self.presentViewController(vc, animated: true, completion: nil)
     }
 
     func gotoTableView(sender:UIButton) {

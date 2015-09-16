@@ -27,7 +27,9 @@ class LoginViewController: BasViewController {
 
         view.backgroundColor = UIColor.whiteColor()
 
-        addNavigation("Login")
+//        addNavigation("Login")
+
+        self.navigationItem.title = "Login"
 
         addView()
         initView()
